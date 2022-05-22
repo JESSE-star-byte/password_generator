@@ -1,6 +1,12 @@
+body {
+    margin: auto;
+}
 main {
     display: flex;
     justify-content: center;
+    background-color: darkblue;
+    width: 100%;
+    height: 100vh;
 }
 .container {
     display: flex;
@@ -8,10 +14,19 @@ main {
     align-items: center;
     width: 50%;
     margin: 2rem;
-
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 8%;
+    margin-top: 14%;
+    font-size: xx-large;
+    font-weight: 800;
+    border-bottom: 1px solid black;
 }
 #length {
-    width: 10%;
+    width: 7%;
 }
 #password {
     width: 50%;
@@ -21,4 +36,22 @@ input {
 }
 button {
     margin: 0.2rem;
+    color: antiquewhite;
+    background-color: darkblue;
+    border-radius: 5px;
+    font-size: large;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+button:hover {
+    background-color: rgb(155, 117, 68);
+    color: darkblue;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+button:active {
+    transform: translateY(4px);
 }

@@ -9,3 +9,7 @@ function generatePassword() {
     }
     document.getElementById("password").value = password;
 }
+function copyClipboard() {
+    var copyText = document.getElementById("password");
+    navigator.clipboard.writeText(copyText.value);
+}
